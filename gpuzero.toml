@@ -1,0 +1,5 @@
+# The scripts this repository may be started with, their parameters and the
+# values a run starts from. `model` lists the parameters that change the model
+# itself: a run cannot continue from a checkpoint with one of them changed.
+[scripts]
+train = { path = "train.py", model = ["dim", "layers", "heads", "block"], params = { steps = 2000, lr = 3e-3, batch = 64 } }
